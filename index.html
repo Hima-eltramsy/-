@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>align</title>
     <link rel="stylesheet" href="style.css">
     <script src="bootstrap.min.js"></script>
     <script src="jquery-3.7.1.min.js"></script>
@@ -38,6 +38,7 @@
                 <div>_</div>
                 <div>_</div>
             </div>
+            <div id="hide"></div>
             <div class="search float-l">
                 
                     <div class="hs"></div>
@@ -146,6 +147,15 @@
             $(".x").hide()
             
         }
+        $(".hide-menu").click(function(){
+            
+                $("#hide").css("opacity","1")
+
+            
+                $("#hide").toggle();
+
+            }
+        )
 
     </script>
 </body>

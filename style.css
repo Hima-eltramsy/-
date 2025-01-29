@@ -16,6 +16,7 @@ a:hover{color: #9acd32;letter-spacing: 4px;border-bottom: 2px solid #6B8E23;}
 .float-r{float: right;}
 .text-c{text-align: center;}
 .hide-menu{width:7vw ;opacity: 0;}
+#hide{width: 30vw;height: 100vw;background:linear-gradient(#001,green);z-index: 1001;position: absolute;top: 0;left: 0;opacity: 0;}
 .page-name{width: 15vw;margin-top:0.9vw ;}
 .page-name p{box-shadow: 0px 2px 5px #b1b1b152 ,inset 0px 2px 5px #b1b1b152}
 .search{width: 8vw;margin-top: 2.5vw ;transition: all 4s ease;background: black;position: relative;cursor: pointer;text-align: right;}
@@ -68,9 +69,10 @@ input{color: #ffffff;border-radius: 5px;cursor: pointer;border: none;margin: 1vw
     .page-name{left:35vw;top: 0;float: none;position: absolute;}
     .search{left:5vw;top: 2vw;float: none;position: absolute;}
     .menu-bar{display: none;}
-    .hide-menu{width:7vw ;right: 1vw;opacity: 1;position: absolute;top: .5vw;}
+    .hide-menu{width:7vw ;right: 1vw;opacity: 1;position: absolute;top: .5vw;cursor: pointer;}
     .hide-menu div{margin: 2px;height: .7vw;font-size: x-large;color:#6B8E23 ;}
     .sticky .hide-menu div{color: black;}
     .footer{flex-direction: column;align-items: flex-start;padding: 10px; }
+    
     
 }
