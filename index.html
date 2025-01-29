@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="bootstrap.min.js"></script>
+    <script src="jquery-3.7.1.min.js"></script>
+</head>
+<body>
+    <div class="home">
+        
+        <div class="lang text-c" >
+            <input type="button" value="english">
+            <input type="button" value="عربى">
+        </div>
+        <div class="header" id="sticky">
+            <div class="page-name float-l ">
+                <h2>bulletboost</h2>
+            </div>
+            <div class="menu-bar float-l ">
+                <a href="">home</a>
+                <a href="">about</a>
+                <a href="">contact</a>
+                <a href="">idea</a>
+            
+                <a href="">gallery</a>
+                <a href="">invest</a>
+                <a href="">vision</a>
+                
+                
+                
+
+            </div>
+            <div class="hide-menu">
+                <div>_</div>
+                <div>_</div>
+                <div>_</div>
+            </div>
+            <div class="search float-l">
+                
+                    <div class="hs"></div>
+                    <div class="ts"></div>
+                
+            </div>
+        </div>    
+        
+
+
+
+        <div class="content m-auto ">
+            <video class="v" src="How a Glock Works.mp4" controls muted autoplay  ></video>
+            <div class="cont-images m-auto" >
+                <p id="previus"><</p>
+                <img  id="gal-images" alt="" src="1.png">
+                <p id="next">></p>
+
+            </div>
+            <div class="details m-auto">
+                <h2>about me:</h2>
+                <p >I am Colonel (Ret.) Tarek Mohamed Samir from Egypt, an innovator and inventor of a groundbreaking technology aimed at enhancing the speed, range, accuracy, and power of small-caliber projectiles for pistols, rifles, and heavy machine guns.
+
+                    This advanced technology represents a revolutionary leap in the ammunition industry, creating a product that is unmatched and highly demanded globally. It has the potential to position the producing country as a global leader in advanced ammunition manufacturing.
+                    
+                    Due to the lack of resources and funding in Egypt for testing and developing this innovation, I am looking to implement this technology in Saudi Arabia, a country known for its supportive environment for innovation and technological advancements. Collaboration on this project promises tremendous economic returns and strengthens Saudi Arabia's global leadership in advanced ammunition production.</p>
+            </div>
+            
+        </div>
+
+
+        <div class="footer">
+            <div class="name ">
+                <h2>bulletboost</h2>
+
+            </div>
+
+            <div class="contact">
+                <h2>contact</h2>
+                <div class="m-auto">
+                
+                    <p> <img src="call.png" width="20" height="20" alt="">  <a href="tel:+20 100 158 0480"> +20 100 158 0480</a></p>
+                    <p><img src="email.png" width="20" height="20" alt="">  <a href="mailto:k01001580480@gmail.com">k01001580480@gmail.com</a></p>
+                </div>
+                
+
+            </div>
+            <div class="links"> 
+                <h2>important links</h2>
+                <a href="">home</a><br>
+                <a href="">about</a><br>
+                <a href="">gallery</a><br>
+                <a href="">vision</a>
+            </div>
+            
+        </div> 
+        <p class="text-c copy">
+            &copy:2025 all rights reserved.bulletboost.com
+        </p>  
+        
+
+        <div id="ask" class="text-c"><a href="" >ask</a></div>
+    </div>
+
+
+    <script>
+        window.onscroll=function(){
+            let sticky=document.getElementById("sticky");
+            if(window.scrollY > 0){
+                sticky.classList.add("sticky")
+            }else{
+                sticky.classList.remove("sticky")
+
+            }
+
+        }
+        const images=["1.png","2.png","3.png","4.png"]
+        let index=0
+        const gallaryimages=document.getElementById("gal-images")
+        if(index<=images.length){
+            $("#next").click(function(){
+            index=index+1
+            gallaryimages.src= images[index]
+        })
+        $("#previus").click(function(){
+            index=index-1
+            gallaryimages.src= images[index]
+        })
+        }else{gallaryimages.src= images[0]}
+        
+        $(".search").click(function (){
+            
+            if($(".x").length===0){
+                $(".header").append("<div class='x'><input class='y' type='search' placeholder='search'><strong onclick='f1()'>x</strong></div>")
+                
+            
+            
+            
+            
+            }else if($(".x").length!=0){
+                $(".x").show();
+            }
+        })
+        
+        function f1(){
+            $(".x").hide()
+            
+        }
+
+    </script>
+</body>
+</html>
